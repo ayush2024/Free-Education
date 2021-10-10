@@ -1,0 +1,345 @@
+/* body{
+    background-color: rgb(231, 221, 214);
+}
+.container{
+
+    border: 2px solid red;
+} */
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* color: black; */
+    
+    color: white;
+    /* justify-content: end; */
+
+}
+
+/* Navigation bar: logo */
+#logo{
+    
+    /* width: 20px; */
+    margin: 13px 13px;
+}
+
+#logo img{
+    height: 93px;
+    margin: 5px 8px;
+}
+
+/* Navigation bar: List styling */
+#navbar ul{
+    display: flex;
+   
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(250, 250, 251);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+
+}
+
+#navbar ul li a{
+   display: block;
+   padding: 5px 22px;
+   text-decoration: none;
+ 
+ background-color: black;
+   color: rgb(245, 238, 238);
+   border-radius: 10px;
+   margin: 4px;
+    font-size: 2.2rem;
+    
+}
+
+#navbar ul li a:hover{
+ color: rgb(241, 241, 16);
+ border-radius: 15px;
+ background-color: rgb(38, 87, 250);
+
+}
+
+/* HOME section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 600px;
+}
+#home::before{
+    content: "";
+    background:url('../IMG/bgF2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    
+}
+
+/* HOME */
+#home h1{
+    font-size: 3rem;
+    
+    color: yellow;
+    text-align: center;
+}
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.9rem;
+}
+.btn{
+    padding: 5px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(243, 200, 200);
+    margin: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out 0.1s;
+}
+.btn:hover{
+    background-color: cyan;
+    transform: scale(1.2);
+}
+
+.container{
+    display: grid;
+    grid-template-columns:repeat(3,200px);
+    grid-gap: 7rem;
+    padding: 40px 10px;
+    /* position: sticky; */
+    align-items: center;
+    justify-content: center;
+}
+#but1{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15PX 10PX;
+    font-size: 1.1rem;
+}
+#but1:hover{
+   background-color: turquoise;
+}
+#but2{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15PX 10PX;
+    font-size: 1.1rem;
+    
+}
+#but2:hover{
+    background-color: turquoise;
+}
+#but3{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 15PX 10PX;
+    font-size: 1.1rem;
+    
+}
+#but3:hover{
+    background-color: turquoise;
+}
+
+/* ABOUT US */
+
+#about{
+    
+    display: flex;
+    margin: 34px;
+    height: 500px;
+}
+#aboutus p{
+    /* color: turquoise; */
+    font-size: 1.5rem;
+}
+#about .box{
+   /* border: 2px solid red; */
+    margin: 5px 13px;
+    border-radius: 15px;
+    background-color: rgb(213, 242, 243);
+    height: 450px;
+    box-shadow: inset 7px 5px red , 10px 10px green;
+   transition: all 1s ease-in-out 0.1s
+    /* text-shadow: 2px 2px white; */
+}
+
+#about .box:hover{
+  border-radius: 25px;
+    transform: translate(0px,15px);
+  
+
+    /* text-shadow: 2px 2px white; */
+}
+
+#about .box p{
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+#about .box img{
+   height: 100px;
+   display: block;
+   margin: auto;
+    padding: 30px 5px;
+}
+
+#aboutus::before{
+    content: "";
+    background:url('../IMG/team.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* BENIFITS */
+
+#benifit{
+    /* background-color: darkseagreen; */
+    background: url('../IMG/benifit.jpg');
+    height: 500px;
+    color: white;
+}
+.anima{
+    
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap:5rem;
+    height: 150px;
+    margin: 34px;
+    color: black;
+    padding: 10PX 10PX;
+    /* position: relative; */
+    align-items: center;
+    justify-content: center;
+   
+}
+  
+
+.daba{
+    transition: all 1s ease-in-out 0.1s;
+    border-radius: 10px;
+    height: 185px;
+    width: 185px;
+    border: 2px solid black;
+    margin: 20px 20px;
+    background-color: chartreuse;
+}
+.daba:hover{
+    transform: scale(1.4);
+    background-color: cyan;
+    border-radius: 20px;
+}
+
+/* contact sction */
+
+#join{
+    position: relative;
+    /* padding: 70px 0px; */
+}
+#join::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../IMG/contact.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    /* margin-top:  10px; */
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+#contact-box form{
+    width: 40%;
+    
+    /* height: 40%; */
+}
+#contact-box label{
+    /* margin: 10px; */
+    font-family: 'Bree Serif', serif;
+    font-size: 1.3rem;
+
+}
+.bt{
+    padding: 13px 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(223, 156, 156);
+    font-size: 2rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+}
+.bt:hover{
+    
+    background-color: rgb(184, 147, 147);
+  border-radius: 15px;
+   
+} 
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+/* Utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+    height: 20PX;
+}
+    
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.center{
+    text-align: center;
+    /* justify-content: center; */
+}
+

@@ -1,0 +1,22 @@
+/* Navigation bar */
+#navbar{
+    flex-direction: column;
+}
+
+/* Home */
+#home{
+    height: 570px;
+}
+#home::before{
+    height: 400px;
+}
+/* About us */
+#about{
+    flex-direction: column;
+}
+/* Benifits */
+
+
+/* Contact section */
+
+/* Footer */
